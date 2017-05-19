@@ -484,7 +484,7 @@ try {
     get('newpepelink').addEventListener('click', function() {
         get('newpepelink').hidden = true
         location.hash = ''
-        location = location.href
+        location.reload()
     }, false)
 
     var hash = location.hash.slice(1)
