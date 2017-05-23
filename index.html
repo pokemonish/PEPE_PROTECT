@@ -522,7 +522,7 @@ try {
                     get('pepeinput').value = data.stringKey
                     get('pepelinktext').hidden = false
                     get('pepelink').hidden = false
-                    var href = location.protocol + '//' + location.host + '/#' + pepeLanguage
+                    var href = location.protocol + '//' + location.host + location.pathname + '#' + pepeLanguage
                     get('pepelink').href = href
                     get('pepelink').innerText = href.slice(0, 35) + ' ...'
                     get('pepeprogress').hidden = true
